@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Righteous&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
+}
+
+:root {
+    --primary-color: #6F4E37;
+    ---secondary-color: #f3961c;
+    --site-max-width: 1300px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    padding: 8px 28px;
+    border: 3px solid transparent;
+    outline: none;
+    border-radius: 50px;
+    background: var(---secondary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+button:hover {
+    border: 3px solid #fff;
+    background: transparent;
+}
+
+#submit:hover {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+}
+
+.seccontainer {
+    width: var(--site-max-width);
+    margin: 0 auto;
+}
+
+.section_title {
+    text-align: center;
+    padding: 32px 0;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: "Righteous", sans-serif;
+}
+
+.section_title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: var(---secondary-color);
+    border-radius: 50px;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: var(--site-max-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navlogo a {
+    display: flex;
+    align-items: center;
+}
+
+nav .navlogo h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+nav ul li:hover {
+    transform: translateY(-.25rem);
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav label {
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+
+label .menu_btn,
+label .close_btn {
+    display: none;
+}
+
+#click {
+    display: none;
+}
+
+/* Hero-Section   */
+.herosec {
+    margin-top: 80px;
+    background: var(--primary-color);
+    height: calc(100vh - 80px);
+}
+
+.herocontainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.herocontainer .textsecton h2 {
+    font-size: 40px;
+    color: var(---secondary-color);
+}
+
+.herocontainer .textsecton h3 {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.herocontainer .textsecton p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin: 24px 0;
+}
+
+.herocontainer .textsecton .herosec-btn {
+    display: flex;
+    gap: 24px;
+    margin-top: 10px;
+
+}
+
+.herocontainer .imagesec {
+    max-width: 45%;
+}
+
+.herocontainer .imagesec img {
+    width: 100%;
+}
+
+/* About Us */
+.aboutus {
+    padding: 52px 0;
+    background: #d1d1d1;
+}
+
+.aboutcont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.aboutcont .textsecton {
+    max-width: 50%;
+}
+
+.aboutcont .textsecton p {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.aboutcont .imagesec {
+    max-width: 45%;
+}
+
+.aboutcont .imagesec img {
+    width: 100%;
+}
+
+/*      Service Section    */
+.service {
+    background: #252525;
+    color: #fff;
+}
+
+.service .seccontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.seccontainer .serviceitems img {
+    width: 100%;
+}
+
+.seccontainer .serviceitems {
+    width: calc(100% / 3 - 25px);
+}
+
+.serviceitems .servicetext {
+    text-align: center;
+}
+
+.serviceitems .servicetext h3 {
+    margin: 12px 0;
+}
+
+.serviceitems .servicetext p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Why us      */
+.whyus {
+    background: #d1d1d1;
+    padding: 52px 0;
+}
+
+.whyus .whycontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.whycontainer .whyusitems img {
+    width: 35%;
+}
+
+.whycontainer .whyusitems {
+    max-width: calc(100% / 3 - 32px);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.whyusitems .whyustext {
+    text-align: center;
+}
+
+.whyusitems .whyustext h3 {
+    margin: 12px 0;
+}
+
+.whyusitems .whyustext p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*   Gallery Section    */
+.gallery {
+    background: #e3e3e3;
+    padding: 52px 0;
+}
+
+.gallery .gallerycont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+}
+
+.gallery .gallerycont img {
+    width: 95%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.gallerycont .gallertitems {
+    max-width: calc(100% / 3 - 30px);
+}
+
+.gallerycont .gallertitems img:hover {
+    transform: translateY(-.50rem);
+
+}
+
+/*    contact deatils */
+.contact {
+    background: #c1c1c1;
+    padding: 52px 0;
+}
+
+.contactcont {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contactcont .contact-form {
+    max-width: 55%;
+    padding: 20px;
+    width: 100%;
+}
+
+.contactcont .contact-form .field {
+    margin: 10px 0;
+}
+
+.contactcont .contact-form .field label {
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+}
+
+.contactcont .contact-form .field input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    padding: 20px 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.contactcont .contact-form .field textarea {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    outline: none;
+    padding: 12px 12px;
+    border: none;
+    font-size: 16px;
+}
+
+.contacttext .contactitems {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    margin: 60px 0;
+}
+
+.contactitems i {
+    font-size: 30px;
+}
+
+.contactitems .contactdetails h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+/*  Footer     */
+footer {
+    background: #1b1b1b;
+    height: 150px;
+}
+
+.footercont {
+    width: 100%;
+
+}
+
+.footercont h3 {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.socialicon {
+    display: flex;
+    justify-content: center;
+}
+
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.socialicon a i {
+    font-size: 1.5rem;
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+
+.socialicon a:hover {
+    border: 1px solid black;
+    background: transparent;
+}
+
+.footnav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.footnav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.footnav ul li a:hover {
+    opacity: 0.7;
+}
+
+/*                Media Query          */
+@media screen and (max-width:1024px) {
+    .seccontainer {
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    nav {
+        padding: 0 24px;
+    }
+
+    label .menu_btn {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: all 0.4s ease;
+    }
+
+    #click:checked~ul {
+        left: 0;
+    }
+
+    #click:checked~label .close_btn {
+        display: block;
+    }
+
+    #click:checked~label .menu_btn {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 8px 12px;
+        width: 48%;
+        margin: 24px auto;
+    }
+
+    nav ul li a {
+        color: #1b1b1b;
+    }
+
+    .herocontainer {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 32px;
+    }
+
+    .herocontainer .imgaesec img {
+        width: 80%;
+        align-items: center;
+    }
+
+    .herocontainer .textsecton {
+        max-width: 100%;
+    }
+
+    .aboutcont {
+        flex-direction: column;
+    }
+
+    .aboutcont .textsecton {
+        max-width: 100%;
+    }
+
+    .aboutcont .textsecton p {
+        text-align: justify;
+    }
+
+    .seccontainer .serviceitems {
+        width: calc(100% / 2 - 32px);
+    }
+
+    .whyus .whycontainer {
+        flex-direction: column;
+    }
+
+    .whycontainer .whyusitems {
+        width: 100%;
+    }
+
+    .gallerycont .gallertitems {
+        width: calc(100% / 2 - 32px);
+    }
+
+    .contactcont {
+        flex-direction: column-reverse;
+    }
+
+    .contacttext .contactitems {
+        margin: 10px 0;
+    }
+
+    .contactcont .contact-form {
+        max-width: 100%;
+    }
+    footer{
+        height: 400px;
+    }
+    .footnav ul{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    nav {
+        padding: 0 14px;
+    }
+
+    .herosec {
+        height: calc(100vh - 80px);
+    }
+
+    .herocontainer .textsecton h2 {
+        font-size: 32px;
+    }
+
+    .herocontainer .textsecton h3 {
+        font-size: 28px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .sectioncont .servicesitems {
+        width: 100%;
+    }
+
+    .gallerycont .gallertitems {
+        width: 100%;
+    }
+
+}
